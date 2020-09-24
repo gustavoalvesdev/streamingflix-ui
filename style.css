@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding-bottom: 120px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0) 0.5%, rgba(0,0,0,1) 99.5%);
+}
+
+header > .container {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.logo {
+    width: 135px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-info {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.btn {
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border: 0;
+}
+
+.login {
+    margin-top: 10px;
+}
+
+.login .btn {
+    border-radius: 3px;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.main-content {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.main-content h2 {
+    font-size: 3rem;
+}
+
+.main-content h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    margin-top: 25px;
+}
+
+.main-content form {
+    margin-top: 25px;
+}
+
+.main-content input[type=email] {
+    width: 60%;
+    max-width: 450px;
+    height: 60px;
+    padding: 5px;
+}
+
+.main-content button {
+    width: 40%;
+    max-width: 355px;
+    height: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    height: 10px;
+    background-color: #222;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;   
+}
+
+.chamada {
+    padding-top: 130px;
+}
+
+.chamada h4 {
+    font-size: 3rem;
+}
+
+.chamada p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.aproveite-na-tv .imagem-chamada img {
+    width: 90%;
+    max-width: 640px;
+}
+
+.baixe-series-e-filmes .imagem-chamada {
+    position: relative;
+}
+
+.baixe-series-e-filmes .imagem-chamada img {
+    width: 90%;
+    max-width: 500px;
+}
+
+.baixe-series-e-filmes .chamada {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.box-download {
+    border: 2px solid #888;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 255px;
+    left: 80px;
+    padding: 15px;
+    color: white;
+    width: 331px;
+}
+
+.baixe-series-e-filmes .imagem-chamada .box-download .capa {
+    width: 50px;
+    float: left;
+}
+
+.box-download p {
+    font-weight: 700;
+    font-size: 1rem;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box-download .box-download-titulo {
+    margin-top: 20px;
+}
+
+.box-download .info-download {
+    font-weight: normal;
+    color: #0071eb;
+    font-size: 0.8rem;
+}
+
+.baixe-series-e-filmes .imagem-chamada .box-download .download-icon {
+    width: 48px;
+    margin-top: 10px;
+}
+
+.sessao-faq {
+    padding: 60px 0;
+}
+
+.sessao-faq h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.question {
+    background-color: #303030;
+    display: block;
+    width: 80%;
+    margin: 0 auto 2px auto;
+    border: 0;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: 0;
+}
+
+.question i {
+    float: right;
+}
+
+.answer {
+    background-color: #303030;
+    margin: 0 auto 10px auto;
+    width: 80%;
+    color: white;
+    padding: 40px;
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.answer p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.assinatura input[type=email] {
+    width: 450px;
+    height: 60px;
+    padding: 5px;
+}
+
+.assinatura button {
+    width: 207px;
+    height: 60px;
+    border: 0;
+    font-size: 1.2rem;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.assinatura-form-wrapper {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.assinatura-form-wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    color: #757575;
+    padding-top: 60px;
+    padding-bottom: 15px;
+}
+
+footer > .container {
+    max-width: 850px;
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: #757575;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.footer-sections section ul {
+    list-style: none;
+}
+
+.footer-sections section ul li {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.select-language {
+    margin: 25px 0;
+    position: relative;
+}
+
+.select-language select {
+    width: 151px;
+    height: 53px;
+    background-color: black;
+    border: 1px solid #999;
+    color: #999;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding-left: 50px;
+}
+
+.select-language i {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+}
+
+p.copyright {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 880px) {
+    .main-content button {
+        display: block;
+        width: 450px;
+        margin: 0 auto;
+    }
+    .chamada h4,
+    .chamada p {
+        text-align: center;
+    }
+
+    .aproveite-na-tv .imagem-chamada {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .baixe-series-e-filmes .container .section-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .baixe-series-e-filmes .container .section-wrapper .imagem-chamada {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .baixe-series-e-filmes .container .section-wrapper .chamada {
+        padding-left: 0;
+    }
+
+    .answer p {
+        font-size: 1.2rem;
+    }
+
+    .assinatura button {
+        width: 450px;
+    }
+
+    .main-content input[type=email] {
+        width: 450px;
+        height: 60px;
+        padding: 5px;
+    }
+
+    .box-download {
+        top: 150px;
+        left: 0;
+    }
+
+    .footer-sections section {
+        width: 100%;
+    }
+}
