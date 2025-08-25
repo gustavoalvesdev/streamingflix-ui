@@ -1,2 +1,2 @@
-# netflix-ui-clone
-Clone da interface de apresentação da Netflix Brasil, feito com Flexbox e JavaScript puro.
+# streamingflix-ui
+Tela Inicial Front End de Serviço de Streaming, feito com Flexbox e JavaScript puro.
